@@ -12,6 +12,6 @@ import { MappedData } from './index.d';
  * of O(log(n))
  */
 export const findTopValues = (values: MappedData[], howMany: number): MappedData[] => {
-  values.sort((valueA, valueB) => valueA.count - valueB.count);
+  values.sort((valueA, valueB) => valueB.count - valueA.count);
   return values.slice(0, howMany);
 };
