@@ -5,9 +5,7 @@ import { processLogs } from './process-log/process-log';
 
 const process = async () => {
   const inputLogStrArr = await readFileAsync(path.resolve(__dirname, '../input/log.log'));
-  // console.log(inputLogStrArr, inputLogStrArr.length);
   const logs = convertToLogs(inputLogStrArr);
-  // console.log(logs);
   processLogs(logs);
 };
 

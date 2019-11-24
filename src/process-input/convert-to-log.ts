@@ -19,7 +19,6 @@ const requestParser = (req: string) => {
  */
 export const convertToLog = (strLog: string): Log => {
   const match = strLog.match(LogIdentifier);
-  // console.log(strLog, !!match);
   return {
     ip: match[1],
     ...requestParser(match[3]),
