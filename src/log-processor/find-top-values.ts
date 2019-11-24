@@ -1,4 +1,4 @@
-import { MappedData } from './index.d';
+import { MappedData } from '.';
 
 /**
  * 

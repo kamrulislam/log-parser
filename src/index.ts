@@ -1,7 +1,7 @@
 import * as path from 'path';
+import { convertToLogs } from './input-processor';
 import { readFileAsync } from './input-reader';
-import { convertToLogs } from './process-input';
-import { processLogs } from './process-log/process-log';
+import { processLogs } from './log-processor';
 
 const process = async () => {
   const inputLogStrArr = await readFileAsync(path.resolve(__dirname, '../input/log.log'));

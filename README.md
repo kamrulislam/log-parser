@@ -25,6 +25,27 @@ npm start
 npm test
 ```
 
+## Input
+
+The application expects log file as `<app_root>/input/log.log`
+
 ## Additional
 
-This project also includes some vscode extensions suggestions.
+- This project also includes some vscode extensions suggestions.
+- Fully enforced `tslint` 
+- Latest testing framework (`jest`) has been used with
+  - iterable test
+  - deep object equality test
+
+## Assumptions
+
+- URL is considered same regardless of Method (eg., GET, POST) or Protocol (eg., HTTP/1.1)
+- URL is considered different if there is a trailing `/` (eg., `/a` and `/a/` are different urls)
+
+## High level architecture
+
+- Input is read from `<app_root>/input/log.log` file via `./src/input-reader`
+- Input string is converted to `Log` via `./src/input-processor`
+- All processing operations are in `./src/log-processor`
+- All folder have exposed public API through `./src/<folder>/index.ts`
+- Program starts from `./src/index.ts`

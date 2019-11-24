@@ -1,5 +1,5 @@
-import { Log } from '../process-input';
-import { MappedData } from './index.d';
+import { MappedData } from '.';
+import { Log } from '../input-processor';
 
 export const preProcessLogs = (logs: Log[]):
   {

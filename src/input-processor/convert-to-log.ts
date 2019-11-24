@@ -1,4 +1,4 @@
-import { Log } from './index.d';
+import { Log } from '.';
 import { LogIdentifier } from './log-identifier';
 
 const requestParser = (req: string) => {
@@ -11,11 +11,11 @@ const requestParser = (req: string) => {
 };
 
 /**
- * 
- * @param strLog 
- * 
+ *
+ * @param strLog
+ *
  * this function assumes that input strLog is a valid log string
- * 
+ *
  */
 export const convertToLog = (strLog: string): Log => {
   const match = strLog.match(LogIdentifier);

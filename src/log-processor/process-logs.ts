@@ -1,5 +1,5 @@
 import { MappedData } from '.';
-import { Log } from '../process-input';
+import { Log } from '../input-processor';
 import { findTopValues } from './find-top-values';
 import { findUniqueIps } from './find-unique-ips';
 import { preProcessLogs } from './pre-process-logs';
