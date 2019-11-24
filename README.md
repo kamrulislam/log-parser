@@ -1,8 +1,6 @@
 # Typescript based log parser - Node Console Application
 
-It has a bare minimum configuration for a typescript based node application.
-
-It comes with EsLint and typescript configured.
+This is a sample node console application that reads log from file and shows different required analysis.
 
 ## Setup
 
