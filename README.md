@@ -1,4 +1,4 @@
-# Simple typescript based node starter application
+# Typescript based log parser - Node Console Application
 
 It has a bare minimum configuration for a typescript based node application.
 
